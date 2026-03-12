@@ -1,0 +1,22 @@
+node_modules/
+.env
+.env.*
+!.env.example
+*.log
+.DS_Store
+
+# SQLite (no longer used; kept for reference)
+# db/data.sqlite
+# *.sqlite
+# *.sqlite3
+
+# Docs / plans (when backend is a separate repo)
+*.md
+!README.md
+*plan*
+*PLAN*
+*doc*
+*DOC*
+docs/
+Doc/
+Plan/

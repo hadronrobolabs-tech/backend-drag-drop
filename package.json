@@ -1,0 +1,21 @@
+{
+  "name": "deltabotix-api",
+  "version": "1.0.0",
+  "description": "Deltabotix backend API - kits, projects, firmware",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "kill-port": "lsof -ti :3000 | xargs -r kill -9 2>/dev/null || true"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.6.1",
+    "express": "^4.21.1",
+    "mysql2": "^3.19.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
