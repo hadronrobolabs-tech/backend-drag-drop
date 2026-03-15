@@ -1,6 +1,13 @@
 /**
  * DB layer: MySQL (mysql2). Pool + single schema file.
  * All tables live in db/schema.sql — update that file when adding new tables/columns.
+ *
+ * DB connection is controlled by these env vars (set in .env locally or in Hostinger Environment Variables):
+ *   MYSQL_HOST     - DB host (e.g. localhost, 127.0.0.1, or remote host)
+ *   MYSQL_PORT     - DB port (default 3306)
+ *   MYSQL_USER     - DB username
+ *   MYSQL_PASSWORD - DB password
+ *   MYSQL_DATABASE - Database name (e.g. drag_and_drop)
  */
 import mysql from 'mysql2/promise';
 import path from 'path';
